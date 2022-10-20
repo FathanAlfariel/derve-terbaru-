@@ -1,46 +1,35 @@
 <style>
-.dropbtn {
-  background-color: transparent;
-  color: white;
-  padding: 5px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
+  .dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  right: -17px;
-  background-color: #f9f9f9;
-  min-width: 230px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: -17px;
+    background-color: #f9f9f9;
+    min-width: 230px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
 
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown:hover .dropbtn {
-  background-color: transparent;
-}
+  .dropdown:hover .dropbtn {
+    background-color: transparent;
+  }
 </style>
 
 <nav class="bg-slate-700 border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-900">
@@ -58,29 +47,26 @@
         <div class="dropdown">
           <button class="dropbtn flex items-center text-sm font-medium text-gray-900 rounded-full hover:text-slate-100 dark:hover:text-blue-500 md:mr-0 focus:ring-2 hover:ring-2 hover:ring-white focus:ring-gray-100 dark:focus:ring-gray-700 dark:text-white">
             <span class="sr-only">Open user menu</span>
-            <img class="mr-2 w-8 h-8 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-3.jpg" alt="user photo">
-            Bonnie Green
+            <img class="mr-2 w-8 h-8 rounded-full" src="https://i.pinimg.com/564x/39/19/fd/3919fddde5a324dbfe6a22b9383458cf.jpg" alt="user photo">
+            Restaurant Anda
             <svg class="w-4 h-4 mx-1.5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
           </button>
 
-          <div class="dropdown-content">
-            <div class="py-3 px-4 text-sm text-gray-900 dark:text-white">
-              <div class="font-medium ">Pro User</div>
-              <div class="truncate">name@flowbite.com</div>
+          <div class="dropdown-content dropdown-toko rounded-lg" style="background: white; min-width: 400px; right: -100px;">
+            <div class="flex py-3 px-4 text-sm text-gray-900 dark:text-white">
+              <img class="mr-2 w-8 h-8 rounded-full" src="https://i.pinimg.com/564x/39/19/fd/3919fddde5a324dbfe6a22b9383458cf.jpg" alt="user photo">
+              <div class="self-center font-semibold text-lg">
+                {{ Auth::user()->name }}
+              </div>
             </div>
-            <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownInformdropdownAvatarNameButtonationButton">
-              <li>
-                <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
-              </li>
-              <li>
-                <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
-              </li>
-              <li>
-                <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
-              </li>
-            </ul>
-            <div class="py-1">
-              <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
+            <hr>
+            <div class="mx-2 text-sm my-1 text-slate-800 leading-5">
+              <p>Pantau pesanan yang masuk dan cek perkembangan restaurant anda secara rutin di sini.</p>
+            </div>
+            <div class="py-1.5 flex justify-center">
+              <a href="/seller" type="button" class="py-1.5 px-3 w-full mx-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                Cek Restaurant Anda Disini
+              </a>
             </div>
           </div>
         </div>
@@ -127,28 +113,35 @@
         <button class="dropbtn flex items-center text-sm font-medium text-gray-900 rounded-full hover:text-slate-100 dark:hover:text-blue-500 md:mr-0 focus:ring-2 hover:ring-2 hover:ring-white focus:ring-gray-100 dark:focus:ring-gray-700 dark:text-white">
           <span class="sr-only">Open user menu</span>
           <img class="mr-2 w-8 h-8 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-3.jpg" alt="user photo">
-          Bonnie Green
+          {{ Auth::user()->name }}
           <svg class="w-4 h-4 mx-1.5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
         </button>
 
-        <div class="dropdown-content">
+        <div class="dropdown-content rounded-lg" style="background: white;">
           <div class="py-3 px-4 text-sm text-gray-900 dark:text-white">
-            <div class="font-medium ">Pro User</div>
-            <div class="truncate">name@flowbite.com</div>
+            <div class="font-medium ">{{ Auth::user()->name }}</div>
+            <div class="truncate">{{ Auth::user()->email }}</div>
           </div>
           <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownInformdropdownAvatarNameButtonationButton">
             <li>
-              <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+              <a href="#" class="block py-2 px-4 text-black hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
             </li>
             <li>
-              <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+              <a href="#" class="block py-2 px-4 text-black hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
             </li>
             <li>
-              <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+              <a href="#" class="block py-2 px-4 text-black hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
             </li>
           </ul>
           <div class="py-1">
-            <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
+            <form method="POST" action="{{ route('logout') }}">
+              @csrf
+              <a :href="route('logout')"
+              onclick="event.preventDefault();
+                          this.closest('form').submit();" class="cursor-pointer block py-2 px-4 text-sm text-black hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">
+                Sign out
+              </a>
+            </form>
           </div>
         </div>
       </div>

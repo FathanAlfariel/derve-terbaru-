@@ -26,6 +26,18 @@
             z-index: -1;
         }
 
+        .dropdown-toko:before {
+            position: absolute;
+            content: '';
+            height: 14px;
+            width: 14px;
+            background: white;
+            right: 112px;
+            top: -0.45em;
+            transform: rotate(45deg);
+            z-index: -1;
+        }
+
         @media only screen and (max-width: 600px) {
             .dropdown-content:before {
                 position: absolute;
