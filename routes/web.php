@@ -17,6 +17,14 @@ Route::get('/', function () {
     return view('homepage');
 });
 
+Route::get('/login2', function () {
+    return view('login');
+});
+
+Route::get('/detail_restaurant', function () {
+    return view('homepage/detail_restaurant');
+});
+
 Route::get('/seller', function () {
     return view('layouts/seller');
 });

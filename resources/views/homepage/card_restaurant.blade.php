@@ -8,7 +8,7 @@
       overflow: hidden;
       border-radius: 3px;
       border: 1px solid rgba(0,0,0,.2);
-      max-width: 240px;
+      max-width: 300px;
       
       text-decoration: none;
       color: white;
@@ -133,7 +133,7 @@
       .credits:focus {
         opacity: 1;
       }
-    </style>
+</style>
     
     <div class="bg-transparent pb-2 w-100 md:w-auto rounded-xl">
       <div class="flex justify-between mx-4 py-2">
@@ -142,10 +142,11 @@
           <a href="#" class="font-medium text-sky-500 hover:underline">See more</a>
         </span>
       </div>
-      <div class="grid gap-2 grid-cols-2 md:grid-cols-5 p-4 pt-1 bg-transparent rounded-lg dark:bg-gray-800">
+
+      <div class="grid gap-2 grid-cols-2 md:grid-cols-4 p-4 pt-1 bg-transparent rounded-lg dark:bg-gray-800">
           
           <div class="card splide__slide" role="group" aria-label="card 2 of 5">
-            <a href="https://accessible360.com" target="_blank">
+            <a href="/detail_restaurant">
               <div class="image">
                 <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3609497/curology-300x300.jpg" class="product-image" alt="">
               </div>
@@ -165,7 +166,7 @@
           </div>
     
           <div class="card splide__slide" role="group" aria-label="card 3 of 5">
-            <a href="https://accessible360.com" target="_blank">
+            <a href="#">
               <div class="image">
                 <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3609497/imani-clovis-300x300.jpg" class="product-image" alt="">
               </div>
@@ -185,7 +186,7 @@
           </div>
     
           <div class="card splide__slide" role="group" aria-label="card 4 of 5">
-            <a href="https://accessible360.com" target="_blank">
+            <a href="#">
               <div class="image">
                 <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3609497/rachit-tank-300x300.jpg" class="product-image" alt="">
               </div>
@@ -205,7 +206,7 @@
           </div>
     
           <div class="card splide__slide" role="group" aria-label="card 5 of 5">
-            <a href="https://accessible360.com" target="_blank">
+            <a href="#">
               <div class="image">
                 <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3609497/deanna-alys-300x300.jpg" class="product-image" alt="">
               </div>
@@ -225,7 +226,7 @@
           </div>
     
           <div class="card splide__slide" role="group" aria-label="card 1 of 5">
-            <a href="https://accessible360.com" target="_blank">
+            <a href="#">
               <div class="image">
                 <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3609497/galina-n-300x300.jpg" class="product-image" alt="">
               </div>
@@ -246,7 +247,7 @@
           </div>
     
           <div class="card splide__slide" role="group" aria-label="card 1 of 5">
-            <a href="https://accessible360.com" target="_blank">
+            <a href="#">
               <div class="image">
                 <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3609497/galina-n-300x300.jpg" class="product-image" alt="">
               </div>
@@ -267,7 +268,7 @@
           </div>
     
           <div class="card splide__slide" role="group" aria-label="card 1 of 5">
-            <a href="https://accessible360.com" target="_blank">
+            <a href="#">
               <div class="image">
                 <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3609497/galina-n-300x300.jpg" class="product-image" alt="">
               </div>
@@ -288,7 +289,7 @@
           </div>
     
           <div class="card splide__slide" role="group" aria-label="card 2 of 5">
-            <a href="https://accessible360.com" target="_blank">
+            <a href="#">
               <div class="image">
                 <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3609497/curology-300x300.jpg" class="product-image" alt="">
               </div>
@@ -306,45 +307,6 @@
               </div>
             </div>
           </div>
-    
-          <div class="card splide__slide" role="group" aria-label="card 3 of 5">
-            <a href="https://accessible360.com" target="_blank">
-              <div class="image">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3609497/imani-clovis-300x300.jpg" class="product-image" alt="">
-              </div>
-              <h2 class="title">Third product</h2>
-            </a>
-    
-            <div class="content">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <div class="price">
-                <span class="new-price">$9.99</span>
-                <span class="original-price">
-                  <span class="sr-only">Originally:</span>
-                  $100.00
-                </span>
-              </div>
-            </div>
-          </div>
-    
-          <div class="card splide__slide" role="group" aria-label="card 4 of 5">
-            <a href="https://accessible360.com" target="_blank">
-              <div class="image">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3609497/rachit-tank-300x300.jpg" class="product-image" alt="">
-              </div>
-              <h2 class="title">Fourth product</h2>
-            </a>
-    
-            <div class="content">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <div class="price">
-                <span class="new-price">$9.99</span>
-                <span class="original-price">
-                  <span class="sr-only">Originally:</span>
-                  $100.00
-                </span>
-              </div>
-            </div>
-          </div>
+
       </div>
     </div>
